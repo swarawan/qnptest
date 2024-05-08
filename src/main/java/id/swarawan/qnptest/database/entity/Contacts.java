@@ -10,11 +10,11 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "user_data")
+@Table(name = "contacts")
 @Data
 @DynamicInsert
 @DynamicUpdate
-public class UserData {
+public class Contacts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,9 +32,6 @@ public class UserData {
 
     @Column(name = "phone_number")
     private String phoneNumber;
-
-    @Column(name = "is_active")
-    private Boolean active;
 
     @Column(name = "createdAt")
     @CreationTimestamp

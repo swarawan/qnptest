@@ -1,13 +1,12 @@
 package id.swarawan.qnptest.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 
 @Data
-public class UserDataRequest {
+public class ContactRequest {
 
     @JsonProperty(value = "name")
     @NotNull(message = "Name cannot be null")
@@ -25,7 +24,4 @@ public class UserDataRequest {
     @NotNull(message = "Phone number cannot be null")
     @Pattern(regexp = "^[0-9]{5,20}+$")
     private String phoneNumber;
-
-    @JsonProperty("active")
-    private Boolean active = true;
 }

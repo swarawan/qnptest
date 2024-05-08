@@ -6,7 +6,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public class UserDataResponse {
+public class ContactResponse {
 
     @JsonProperty(value = "id")
     private Long id;
@@ -22,9 +22,6 @@ public class UserDataResponse {
 
     @JsonProperty(value = "phone_number")
     private String phoneNumber;
-
-    @JsonProperty(value = "is_active")
-    private Boolean active;
 
     @JsonProperty(value = "createdAt")
     private LocalDateTime createdAt;
