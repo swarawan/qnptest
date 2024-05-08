@@ -42,8 +42,8 @@ public class AppControllerAdvice extends ResponseEntityExceptionHandler {
         return new ResponseEntity(response, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<Object> exception(Exception exception) {
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<Object> runtimeException(RuntimeException exception) {
         BaseResponse response = new BaseResponse();
         response.setStatus(false);
         response.setMessage(exception.getMessage());
