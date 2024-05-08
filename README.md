@@ -150,3 +150,18 @@ Response:
   "message": "Data deleted"
 }
 ``` 
+
+### [GET] QNP - Get JsonPlaceholder 
+URL: http://localhost:8080/json_placeholder
+
+Header(s):
+- Authorization: Bearer <access-token>
+
+Response:
+```json
+{
+  "total_time": "737 ms",
+  "users": "<post-json-from-external-url>",
+  "posts": "<post-json-from-external-url>"
+}
+``` 
