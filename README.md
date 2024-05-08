@@ -9,8 +9,9 @@
 
 ## How to run
 
-1. Inside the root folder execute `./gradlew build` to compile the program.
-2. Then execute `./gradlew bootRun` to run the binary.
+1. Open file `/src/main/resources/application.properties` and set your own `DB_HOST`, `DB_USERNAME`, and `DB_PASSWORD`.
+2. Inside the root folder execute `./gradlew build` to compile the program.
+3. Then execute `./gradlew bootRun` to run the binary.
 ---
 
 ## Assignments
